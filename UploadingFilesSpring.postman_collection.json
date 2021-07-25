@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "26deba12-ff85-4538-b55a-f32b0636b509",
+		"name": "UploadingFilesSpring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Projects/Uploading-files-Spring/UplodingFilesApplication_Tests.txt"
+						},
+						{
+							"key": "filename",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/uploading-files-0.0.1-SNAPSHOT/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"uploading-files-0.0.1-SNAPSHOT",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
